@@ -23,10 +23,9 @@ namespace INEQ.DAL
 
             var componenttypes = new List<ComponentType>
             {
-                new ComponentType { Description = " CPU", Active = false },
+                new ComponentType { Description = " CPU", Active = true },
                 new ComponentType { Description = " Memoria ", Active = false },
-                new ComponentType { Description = " Disco Duro ", Active = false },
-                new ComponentType { Description = " Componentes activos ", Active = false },
+                new ComponentType { Description = " Disco Duro ", Active = true },
             };
 
             componenttypes.ForEach(s => context.ComponentTypes.Add(s));
