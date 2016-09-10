@@ -157,12 +157,18 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EquipmentController.cs" />
+    <Compile Include="Controllers\EquipmentTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\INEQContext.cs" />
     <Compile Include="DAL\INEQInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609100239184_InitialCreate.cs" />
+    <Compile Include="Migrations\201609100239184_InitialCreate.Designer.cs">
+      <DependentUpon>201609100239184_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ComponentType.cs" />
     <Compile Include="Models\Equipment.cs" />
     <Compile Include="Models\EquipmentType.cs" />
@@ -237,6 +243,11 @@
     <Content Include="Views\Equipment\Details.cshtml" />
     <Content Include="Views\Equipment\Edit.cshtml" />
     <Content Include="Views\Equipment\Index.cshtml" />
+    <Content Include="Views\EquipmentTypes\Create.cshtml" />
+    <Content Include="Views\EquipmentTypes\Delete.cshtml" />
+    <Content Include="Views\EquipmentTypes\Details.cshtml" />
+    <Content Include="Views\EquipmentTypes\Edit.cshtml" />
+    <Content Include="Views\EquipmentTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -249,6 +260,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201609100239184_InitialCreate.resx">
+      <DependentUpon>201609100239184_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
