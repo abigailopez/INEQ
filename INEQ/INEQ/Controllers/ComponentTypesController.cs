@@ -13,12 +13,12 @@ namespace INEQ.Controllers
     {
         INEQContext dc = new INEQContext();
 
-      //LIST
+      //READ
         public ActionResult List()
         {
             return View(dc.ComponentTypes.ToList());
         }
-
+        //READ
         public ActionResult Details(int id = 0)
         {
             return View(dc.ComponentTypes.Find(id));
