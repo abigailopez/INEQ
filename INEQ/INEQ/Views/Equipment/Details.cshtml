@@ -82,6 +82,26 @@
             @Html.DisplayFor(model => model.Active)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.EquipmentTypes)
+        </dt>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>EquipmentType</th>
+                    <th>Grade</th>
+                </tr>
+                @foreach (var item in Model.EquipmentTypes)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+
     </dl>
 </div>
 <p>
