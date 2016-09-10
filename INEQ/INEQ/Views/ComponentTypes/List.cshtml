@@ -1,10 +1,10 @@
-﻿@model IEnumerable<INEQ.Models.EquipmentType>
+﻿@model IEnumerable<INEQ.Models.ComponentType>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "List";
 }
 
-<h2>Index</h2>
+<h2>List</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -13,12 +13,6 @@
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UsefulLife)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.GuaranteeDuration)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Active)
@@ -30,12 +24,6 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UsefulLife)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.GuaranteeDuration)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Active)

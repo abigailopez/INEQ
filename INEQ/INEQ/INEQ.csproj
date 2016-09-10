@@ -157,8 +157,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComponentTypesController.cs" />
-    <Compile Include="Controllers\EquipmentController.cs" />
-    <Compile Include="Controllers\EquipmentTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\INEQContext.cs" />
     <Compile Include="DAL\INEQInitializer.cs" />
@@ -239,21 +237,10 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Equipment\Create.cshtml" />
-    <Content Include="Views\Equipment\Delete.cshtml" />
-    <Content Include="Views\Equipment\Details.cshtml" />
-    <Content Include="Views\Equipment\Edit.cshtml" />
-    <Content Include="Views\Equipment\Index.cshtml" />
-    <Content Include="Views\EquipmentTypes\Create.cshtml" />
-    <Content Include="Views\EquipmentTypes\Delete.cshtml" />
-    <Content Include="Views\EquipmentTypes\Details.cshtml" />
-    <Content Include="Views\EquipmentTypes\Edit.cshtml" />
-    <Content Include="Views\EquipmentTypes\Index.cshtml" />
-    <Content Include="Views\ComponentTypes\Create.cshtml" />
-    <Content Include="Views\ComponentTypes\Delete.cshtml" />
+    <Content Include="Views\ComponentTypes\List.cshtml" />
     <Content Include="Views\ComponentTypes\Details.cshtml" />
+    <Content Include="Views\ComponentTypes\Create.cshtml" />
     <Content Include="Views\ComponentTypes\Edit.cshtml" />
-    <Content Include="Views\ComponentTypes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
