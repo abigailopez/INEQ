@@ -9,19 +9,20 @@ using System.Data.Entity;
 
 namespace INEQ.Controllers
 {
-    public class ComponentTypesController : Controller
+    public class EquipmentTypeController : Controller
     {
         INEQContext dc = new INEQContext();
 
-      //READ ALL
+        // READ ALL
         public ActionResult List()
         {
-            return View(dc.ComponentTypes.ToList());
+            return View(dc.EquipmentTypes.ToList());
         }
-        //READ SINGLE
+
+        //READ BY ID
         public ActionResult Details(int id = 0)
         {
-            return View(dc.ComponentTypes.Find(id));
+            return View(dc.EquipmentTypes.Find(id));
         }
 
         //CREATE
@@ -30,12 +31,12 @@ namespace INEQ.Controllers
             return View();
         }
 
-        [HttpPost,ValidateAntiForgeryToken]
-        public ActionResult Create(ComponentType ctp)
+        [HttpPost, ValidateAntiForgeryToken]
+        public ActionResult Create(EquipmentType eqt)
         {
             using (dc)
             {
-                dc.ComponentTypes.Add(ctp);
+                dc.EquipmentTypes.Add(eqt);
                 dc.SaveChanges();
             }
             return RedirectToAction("List");
@@ -45,13 +46,13 @@ namespace INEQ.Controllers
         //UPDATE
         public ActionResult Edit(int id = 0)
         {
-            return View(dc.ComponentTypes.Find(id));
+            return View(dc.EquipmentTypes.Find(id));
         }
 
-        [HttpPost,ValidateAntiForgeryToken]
-        public ActionResult Edit(ComponentType ctp)
+        [HttpPost, ValidateAntiForgeryToken]
+        public ActionResult Edit(EquipmentType eqt)
         {
-            dc.Entry(ctp).State = EntityState.Modified;
+            dc.Entry(eqt).State = EntityState.Modified;
             dc.SaveChanges();
             return RedirectToAction("List");
         }
@@ -59,17 +60,17 @@ namespace INEQ.Controllers
         //DELETE
         public ActionResult Delete(int id = 0)
         {
-            return View(dc.ComponentTypes.Find(id));
+            return View(dc.EquipmentTypes.Find(id));
         }
 
-        
-        [HttpPost,ActionName("Delete")]
+
+        [HttpPost, ActionName("Delete")]
         public ActionResult delete_conf(int id)
         {
-            ComponentType ctp = dc.ComponentTypes.Find(id);
-            dc.ComponentTypes.Remove(ctp);
+           EquipmentType eqt = dc.EquipmentTypes.Find(id);
+            dc.EquipmentTypes.Remove(eqt);
             dc.SaveChanges();
-            return RedirectToAction("List"); 
+            return RedirectToAction("List");
         }
     }
 }
