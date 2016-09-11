@@ -157,17 +157,20 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComponentTypesController.cs" />
+    <Compile Include="Controllers\EquipmentTypeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\INEQContext.cs" />
     <Compile Include="DAL\INEQInitializer.cs" />
-    <Compile Include="DAL\INEQInitializerwarehouse.cs" />
-    <Compile Include="DAL\INEQWarehouse.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201609100239184_InitialCreate.cs" />
     <Compile Include="Migrations\201609100239184_InitialCreate.Designer.cs">
       <DependentUpon>201609100239184_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609111529391_Second.cs" />
+    <Compile Include="Migrations\201609111529391_Second.Designer.cs">
+      <DependentUpon>201609111529391_Second.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BrandId.cs" />
@@ -244,6 +247,12 @@
     <Content Include="Views\ComponentTypes\Details.cshtml" />
     <Content Include="Views\ComponentTypes\Create.cshtml" />
     <Content Include="Views\ComponentTypes\Edit.cshtml" />
+    <Content Include="Views\ComponentTypes\Delete.cshtml" />
+    <Content Include="Views\EquipmentType\List.cshtml" />
+    <Content Include="Views\EquipmentType\Details.cshtml" />
+    <Content Include="Views\EquipmentType\Create.cshtml" />
+    <Content Include="Views\EquipmentType\Edit.cshtml" />
+    <Content Include="Views\EquipmentType\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -260,6 +269,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201609100239184_InitialCreate.resx">
       <DependentUpon>201609100239184_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609111529391_Second.resx">
+      <DependentUpon>201609111529391_Second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
