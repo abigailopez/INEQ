@@ -158,7 +158,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ComponentTypesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="DAL\INEQC.cs" />
     <Compile Include="DAL\INEQContext.cs" />
+    <Compile Include="DAL\INEQI.cs" />
     <Compile Include="DAL\INEQInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
