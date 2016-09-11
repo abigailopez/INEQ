@@ -160,6 +160,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DAL\INEQContext.cs" />
     <Compile Include="DAL\INEQInitializer.cs" />
+    <Compile Include="DAL\INEQInitializerwarehouse.cs" />
+    <Compile Include="DAL\INEQWarehouse.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
