@@ -10,5 +10,6 @@ namespace INEQ.Models
         public String Description { get; set; }
         public Boolean Active { get; set; }
 
+        public virtual ICollection<Equipment> Equipment { get; set; }
     }
 }
