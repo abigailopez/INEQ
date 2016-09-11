@@ -14,7 +14,6 @@ namespace INEQ.DAL
         public DbSet<Equipment> Equipments { get; set; }
         public DbSet<EquipmentType> EquipmentTypes { get; set; }
         public DbSet<ComponentType> ComponentTypes { get; set; }
-        public DbSet<Warehouse> Warehouses { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
