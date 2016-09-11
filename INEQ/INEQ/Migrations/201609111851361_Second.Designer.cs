@@ -13,7 +13,7 @@ namespace INEQ.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201609111802214_Second"; }
+            get { return "201609111851361_Second"; }
         }
         
         string IMigrationMetadata.Source
