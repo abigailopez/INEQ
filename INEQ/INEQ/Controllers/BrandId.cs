@@ -1,15 +1,16 @@
-﻿using System;
+﻿using INEQ.DAL;
+using INEQ.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.MVC;
+using System.Web.Mvc;
+using System.Data.Entity;
 
 namespace INEQ.Controllers
 {
-    public class BrandIdController : Controllers
+    public class BrandId
     {
-        INEQContext dc = new INEQContext();
-
         // READ ALL
         public ActionResult List()
         {
@@ -43,26 +44,27 @@ namespace INEQ.Controllers
         }
         [HttpPost, ValidateAntiForgeryToken]
         public ActionResult Edit(BrandId br)
-        { 
-                 dc.Entry(br).State = EntityState.Modified;
+        {
+            dc.Entry(br).State = EntityState.Modified;
             dc.SaveChanges();
             return RedirectToAction("List");
-    }
+        }
 
-    //DELETE
-    public ActionResult Delete(int id = 0)
-    {
-        return View(dc.ComponentTypes.Find(id));
-    }
+        //DELETE
+        public ActionResult Delete(int id = 0)
+        {
+            return View(dc.ComponentTypes.Find(id));
+        }
 
 
-    [HttpPost, ActionName("Delete")]
-    public ActionResult delete_conf(int id)
-    {
-        BrandId br = dc.BrandIds.Find(id);
-        dc.BrandId.Remove(eq);
-        dc.SaveChanges();
-        return RedirectToAction("List");
+        [HttpPost, ActionName("Delete")]
+        public ActionResult delete_conf(int id)
+        {
+            BrandId br = dc.BrandIds.Find(id);
+            dc.BrandId.Remove(eq);
+            dc.SaveChanges();
+            return RedirectToAction("List");
+        }
     }
 }
 }
