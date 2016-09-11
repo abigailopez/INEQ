@@ -168,10 +168,6 @@
     <Compile Include="Migrations\201609100239184_InitialCreate.Designer.cs">
       <DependentUpon>201609100239184_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609111529391_Second.cs" />
-    <Compile Include="Migrations\201609111529391_Second.Designer.cs">
-      <DependentUpon>201609111529391_Second.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BrandId.cs" />
     <Compile Include="Models\ComponentType.cs" />
@@ -270,9 +266,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201609100239184_InitialCreate.resx">
       <DependentUpon>201609100239184_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609111529391_Second.resx">
-      <DependentUpon>201609111529391_Second.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
