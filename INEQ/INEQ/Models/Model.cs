@@ -5,11 +5,12 @@ using System.Web;
 
 namespace INEQ.Models
 {
-    public class BrandId
-    { public int Id { get; set; }
+    public class Model
+    {
+        public int Id { get; set; }
         public String Description { get; set; }
         public Boolean Active { get; set; }
 
-        public virtual ICollection<Equipment> Equipments { get; set; }
+        public virtual ICollection<BrandId> BrandIds { get; set; }
     }
 }

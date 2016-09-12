@@ -15,7 +15,7 @@ namespace INEQ.DAL
         public DbSet<EquipmentType> EquipmentTypes { get; set; }
         public DbSet<ComponentType> ComponentTypes { get; set; }
         public DbSet<BrandId> BrandIds { get; set; }
-
+        public Dbset<Model>Models { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
